@@ -100,6 +100,6 @@ If you have Isaac Sim experience, start with Part III.
 
 ## Next Steps
 
-If you're ready to start, proceed to [Part I: Mental Models](../part-1-mental-models/01-purpose-and-scope.md).
+If you're ready to start, proceed to [Part I: Mental Models](../mental-models/01-purpose-and-scope.md).
 
 If you want to jump to a specific topic, see [Appendix E: Fast Paths](../appendices/e-fast-paths.md).

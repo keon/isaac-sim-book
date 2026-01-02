@@ -40,6 +40,6 @@ Each reader archetype has a recommended fast path through the material.
 
 ## Quick Start
 
-Begin with [Part I: Mental Models](./part-1-mental-models/01-purpose-and-scope.md) to build the foundational understanding that prevents early mistakes.
+Begin with [Part I: Mental Models](./mental-models/01-purpose-and-scope.md) to build the foundational understanding that prevents early mistakes.
 
 Or see [Appendix E: Fast Paths](./appendices/e-fast-paths.md) for goal-oriented reading paths.

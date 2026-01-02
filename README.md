@@ -43,9 +43,16 @@ The book will be available at `http://localhost:3000`
 │   ├── SUMMARY.md      # Table of contents
 │   ├── introduction.md
 │   ├── front-matter/
-│   ├── part-1-mental-models/
-│   ├── part-2-usd-scene/
-│   ├── ... (parts 3-10)
+│   ├── mental-models/
+│   ├── usd-scene/
+│   ├── robot-modeling/
+│   ├── sensors/
+│   ├── programming/
+│   ├── integration/
+│   ├── synthetic-data/
+│   ├── robot-learning/
+│   ├── end-to-end/
+│   ├── production/
 │   └── appendices/
 └── docs/               # Generated HTML (published to GitHub Pages)
 ```
