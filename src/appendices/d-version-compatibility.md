@@ -1,53 +1,47 @@
-# Appendix D: Version Compatibility Matrix
+# Version Compatibility
 
-Isaac Sim, Isaac Lab, ROS 2, driver versions.
+## Isaac Sim Versions
 
-## Isaac Sim Version History
+| Isaac Sim | Isaac Lab | Python | Driver |
+|-----------|-----------|--------|--------|
+| 4.5.0 | 2.0.x | 3.10 | 535+ |
+| 4.2.0 | 1.2.x | 3.10 | 525+ |
+| 4.0.0 | 1.0.x | 3.10 | 525+ |
+| 2023.1.1 | 0.6.x | 3.10 | 525+ |
 
-### 2024.1
+## Common Breaking Changes
 
-Content coming soon...
+### 4.5.0
+- API changes in articulation interface
+- New camera sensor API
 
-### 2023.1
+### 4.2.0
+- Isaac Lab renamed from Orbit
+- Environment API changes
 
-Content coming soon...
+### 4.0.0
+- Major PhysX upgrade
+- Scene structure changes
 
-### 2022.2
+## Checking Versions
 
-Content coming soon...
+```python
+# Isaac Sim version
+import carb
+print(carb.settings.get_settings().get("/app/version"))
 
-## Isaac Lab Compatibility
+# Python version
+import sys
+print(sys.version)
 
-Content coming soon...
+# Driver version
+# Run: nvidia-smi
+```
 
-## ROS 2 Compatibility
+## Migration Tips
 
-### Humble
-
-Content coming soon...
-
-### Iron
-
-Content coming soon...
-
-### Jazzy
-
-Content coming soon...
-
-## Driver Requirements
-
-### NVIDIA Driver
-
-Content coming soon...
-
-### CUDA
-
-Content coming soon...
-
-### Container Runtimes
-
-Content coming soon...
-
-## Known Breaking Changes
-
-Content coming soon...
+1. Read release notes before upgrading
+2. Test in isolation first
+3. Check API changes for your imports
+4. Validate physics behavior
+5. Re-run regression tests

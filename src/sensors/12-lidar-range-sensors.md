@@ -1,15 +1,14 @@
 # LiDAR and Range Sensors
 
-**Focus:** Ray-based sensing, sampling, and performance cost
+*Chapter to be written*
 
-## What Could Go Wrong
+## Topics
 
-Your LiDAR is too slow, or returns unexpected hits, or misses obstacles. Ray-based sensors have performance and sampling tradeoffs that aren't obvious.
+- LiDAR configuration
+- Ray-based vs RTX LiDAR
+- Sampling patterns
+- Performance cost
 
-## Overview
+## Checkpoint
 
-Content coming soon...
-
-## Running Example
-
-Content coming soon...
+LiDAR point clouds are meaningful and performant.

@@ -1,44 +1,35 @@
 # Introduction
 
-Welcome to **Isaac: A Systems-Oriented Guide to Isaac Sim**.
+Welcome to **Isaac: A Practice-First Guide to Isaac Sim**.
 
-This book is a comprehensive, engineering-focused guide to NVIDIA Isaac Sim for robotics simulation, synthetic data generation, and robot learning.
+This book teaches NVIDIA Isaac Sim by doing. You'll run the simulator in the first chapter, control a robot in the third, and build understanding progressively as concepts become necessary.
 
 ## What is this book?
 
 This is not a tutorial collection or API reference. This is a **systems book** that teaches you:
-- How Isaac Sim actually works (execution models, guarantees, limitations)
-- How to build production-grade simulation pipelines
+- How to build working simulations quickly
+- How Isaac Sim actually works (when that knowledge becomes necessary)
 - How to diagnose and fix problems systematically
-- How to scale from prototype to deployment
+- How to scale from prototype to production
 
 ## Who is this book for?
 
-This book serves three primary audiences:
-
-- **Roboticists** integrating Isaac Sim with existing robot stacks (especially ROS 2)
+- **Roboticists** integrating Isaac Sim with existing robot stacks
 - **ML Engineers** training policies or generating synthetic data
 - **Graphics/Simulation Engineers** coming from USD/Omniverse backgrounds
 
-Each reader archetype has a recommended fast path through the material.
+## How this book is organized
 
-## How to use this book
+**Parts I–IV** get you productive: running the simulator, building scenes, modeling robots, configuring sensors.
 
-**If you're new to Isaac Sim:** Start with [Mental Models](./mental-models/01-purpose-and-scope.md) to build foundational understanding.
+**Part V** explains the execution model—introduced only after you've hit the bugs it causes.
 
-**If you have a specific problem:** Jump to [Failure Mode Index](./appendices/b-failure-mode-index.md) for symptom-based diagnosis.
+**Parts VI–VIII** cover integration, synthetic data, and robot learning.
 
-**If you want to understand deeply:** Read linearly (~25-30 hours of focused study).
+**Parts IX–X** bring everything together for production systems.
 
-**For goal-oriented reading:** See [Fast Paths](./appendices/e-fast-paths.md) for curated paths by use case.
-
-## What makes this book different?
-
-- **Systems perspective**: Focuses on execution models and contracts, not just APIs
-- **Diagnostic workflows**: Each section ends with troubleshooting guides
-- **Production-oriented**: Covers reliability, performance, and sim-to-real transfer
-- **Running example**: A mobile manipulator in a warehouse, built incrementally
+**Appendices** provide quick reference material.
 
 ## Quick Start
 
-Begin with [Mental Models](./mental-models/01-purpose-and-scope.md) to understand how Isaac Sim works before building with it.
+Open [Launching Isaac Sim](./getting-started/01-launching-isaac-sim.md) and follow along. You'll be controlling a robot within an hour.

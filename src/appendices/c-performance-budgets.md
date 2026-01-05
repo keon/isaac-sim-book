@@ -1,73 +1,40 @@
-# Appendix C: Performance Budgets
+# Performance Budgets
 
-Reference timings for common configurations.
+Typical costs for common operations.
 
-These are rough guidelines based on typical hardware (RTX 3090, Ryzen 5950X).
+## Physics Stepping
 
-## Baseline Configurations
+| Configuration | Typical Speed |
+|---------------|---------------|
+| Single robot, simple scene | 1000+ Hz |
+| Single robot, complex scene | 200-500 Hz |
+| 100 parallel envs (GPU) | 50-100k steps/sec |
+| 1000 parallel envs (GPU) | 200-500k steps/sec |
 
-### Empty scene
+## Sensors
 
-Content coming soon...
+| Sensor | Typical Cost |
+|--------|--------------|
+| Joint state | ~0 (free) |
+| IMU | <0.1 ms |
+| Camera 640x480 RGB | 2-5 ms |
+| Camera 1920x1080 RGB | 5-15 ms |
+| Depth + segmentation | +2-5 ms |
+| LiDAR (RTX) | 3-10 ms |
+| LiDAR (ray-based) | 1-3 ms |
 
-### Simple robot, no sensors
+## Memory
 
-Content coming soon...
+| Component | Typical Usage |
+|-----------|---------------|
+| Isaac Sim base | 8-12 GB VRAM |
+| Per parallel env | 10-50 MB VRAM |
+| Per camera | 50-200 MB VRAM |
+| Complex scene | +2-8 GB VRAM |
 
-### Mobile manipulator
+## Guidelines
 
-Content coming soon...
-
-## Sensor Costs
-
-### RGB camera (1920×1080)
-
-Content coming soon...
-
-### Depth camera
-
-Content coming soon...
-
-### Segmentation
-
-Content coming soon...
-
-### 2D LiDAR (360 rays)
-
-Content coming soon...
-
-### 3D LiDAR (64 beams)
-
-Content coming soon...
-
-## Scaling Scenarios
-
-### 10 robots, no sensors
-
-Content coming soon...
-
-### 100 robots, no sensors
-
-Content coming soon...
-
-### 10 robots, cameras
-
-Content coming soon...
-
-### Complex scene (warehouse)
-
-Content coming soon...
-
-## Optimization Impact
-
-### With instancing
-
-Content coming soon...
-
-### With headless mode
-
-Content coming soon...
-
-### With reduced physics substeps
-
-Content coming soon...
+- **Training**: Skip rendering when possible
+- **Cameras**: Use lowest resolution that works
+- **Physics rate**: Use highest timestep that's stable
+- **Parallel envs**: Start with 256-1024, scale up as needed

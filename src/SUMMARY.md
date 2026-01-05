@@ -1,90 +1,81 @@
 # Summary
 
-[Introduction](./introduction.md)
+[How to Use This Book](./front-matter.md)
 
 ---
 
-# Mental Models
+# Start Running Isaac Sim
 
-- [Purpose and Scope of Isaac Sim](./mental-models/01-purpose-and-scope.md)
-- [Simulation Execution Model](./mental-models/02-simulation-execution-model.md)
-- [Physics Stepping and Determinism](./mental-models/03-physics-stepping-determinism.md)
-- [Installation and Environment Setup](./mental-models/04-installation-and-setup.md)
-- [Debugging Guide](./mental-models/diagnostic-foundations.md)
+- [Launching Isaac Sim](./getting-started/01-launching-isaac-sim.md)
+- [Your First Robot](./getting-started/02-your-first-robot.md)
+- [First Python Control](./getting-started/03-first-python-control.md)
+- [Quick Tutorials Sprint](./getting-started/04-quick-tutorials.md)
 
-# USD and Scene Structure
+# Scenes Break: Fixing Structure
 
-- [OpenUSD for Robotics](./usd-scene/05-openusd-for-robotics.md)
-- [Transforms, Units, and Coordinates](./usd-scene/06-transforms-units-coordinates.md)
-- [Building and Scaling Environments](./usd-scene/07-building-scaling-environments.md)
-- [Debugging Guide](./usd-scene/usd-failure-modes.md)
+- [How Scenes Are Actually Stored](./usd-scene/05-how-scenes-stored.md)
+- [Transforms, Units, and Frames](./usd-scene/06-transforms-units-frames.md)
+- [Scaling Scenes Without Pain](./usd-scene/07-scaling-scenes.md)
 
-# Robot Modeling
+# Robots That Behave
 
-- [Robot Import Pipelines](./robot-modeling/08-robot-import-pipelines.md)
-- [Articulations, Joints, and Drives](./robot-modeling/09-articulations-joints-drives.md)
-- [Collision Geometry and Contact Tuning](./robot-modeling/10-collision-geometry-contact.md)
-- [Debugging Guide](./robot-modeling/robot-debugging.md)
+- [Importing Robots](./robot-modeling/08-importing-robots.md)
+- [Articulations and Drives](./robot-modeling/09-articulations-drives.md)
+- [Collision and Contact Tuning](./robot-modeling/10-collision-contact.md)
 
 # Sensors
 
-- [Camera Sensors and Rendering](./sensors/11-camera-sensors-rendering.md)
+- [Camera Sensors](./sensors/11-camera-sensors.md)
 - [LiDAR and Range Sensors](./sensors/12-lidar-range-sensors.md)
-- [IMU, Force/Torque, and Proprioception](./sensors/13-imu-force-proprioception.md)
-- [Sensor Fusion Considerations](./sensors/14-sensor-fusion.md)
-- [Debugging Guide](./sensors/sensor-debugging.md)
+- [IMU and Proprioception](./sensors/13-imu-proprioception.md)
+- [Multi-Sensor Timing](./sensors/14-multi-sensor-timing.md)
 
-# Programming the Simulator
+# Controlling Execution
 
-- [Runtime Architecture](./programming/15-runtime-architecture.md)
-- [Python Control Patterns](./programming/16-python-control-patterns.md)
-- [Controllers and Multi-Robot Systems](./programming/17-controllers-multi-robot.md)
-- [Debugging and Diagnostics](./programming/18-debugging-diagnostics.md)
-- [Logging, Headless Execution, and CI](./programming/19-logging-headless-ci.md)
-- [Performance Budgets](./programming/performance-budgets.md)
+- [Simulation Execution Model](./execution/15-simulation-execution-model.md)
+- [Physics Stepping and Reproducibility](./execution/16-physics-stepping-reproducibility.md)
+- [Python Control Patterns](./execution/17-python-control-patterns.md)
 
 # Integration Paths
 
-- [Integration Architecture Overview](./integration/20-integration-overview.md)
-- [ROS 2 Bridge Setup and Constraints](./integration/21-ros2-bridge-setup.md)
-- [ROS 2 Time, TF, and Synchronization](./integration/22-ros2-time-tf-sync.md)
-- [Direct API Integration](./integration/23-direct-api-integration.md)
-- [Performance and System Separation](./integration/24-performance-system-separation.md)
-- [Debugging Guide](./integration/integration-debugging.md)
+- [Integration Options Overview](./integration/18-integration-overview.md)
+- [ROS 2 Bridge](./integration/19-ros2-bridge.md)
+- [Time, TF, and Synchronization](./integration/20-time-tf-sync.md)
+- [Non-ROS Integration](./integration/21-non-ros-integration.md)
+- [Keeping Integration Fast](./integration/22-keeping-integration-fast.md)
 
-# Synthetic Data Generation
+# Synthetic Data That Trains Models
 
-- [When Synthetic Data Works](./synthetic-data/25-synthetic-data-effectiveness.md)
-- [Replicator Architecture](./synthetic-data/26-replicator-architecture.md)
-- [Domain Randomization and Validation](./synthetic-data/27-domain-randomization-validation.md)
-- [Debugging Guide](./synthetic-data/transfer-debugging.md)
+- [When Synthetic Data Works](./synthetic-data/23-when-synthetic-works.md)
+- [Replicator Basics](./synthetic-data/24-replicator-basics.md)
+- [Domain Randomization](./synthetic-data/25-domain-randomization.md)
+- [Dataset Validation](./synthetic-data/26-dataset-validation.md)
 
-# Robot Learning with Isaac Lab
+# Learning with Isaac Lab
 
-- [Isaac Lab Architecture](./robot-learning/28-isaac-lab-architecture.md)
-- [Reward Design and Training Stability](./robot-learning/29-reward-design-stability.md)
-- [Scaling Training](./robot-learning/30-scaling-training.md)
-- [Policy Evaluation and Deployment](./robot-learning/31-policy-evaluation-deployment.md)
-- [Debugging Guide](./robot-learning/training-debugging.md)
+- [Isaac Lab Overview](./robot-learning/27-isaac-lab-overview.md)
+- [Training a Policy](./robot-learning/28-training-policy.md)
+- [Scaling Training](./robot-learning/29-scaling-training.md)
+- [Policy Deployment](./robot-learning/30-policy-deployment.md)
 
-# End-to-End Integration
+# End-to-End System
 
-- [Complete Pipeline Walkthrough](./end-to-end/32-complete-pipeline.md)
-- [Cross-Stack Failure Analysis](./end-to-end/33-cross-stack-failure-analysis.md)
+- [Complete Pipeline Walkthrough](./end-to-end/31-complete-pipeline.md)
+- [Cross-Stack Debugging](./end-to-end/32-cross-stack-debugging.md)
 
-# Production Operations
+# Production Reality
 
-- [Performance Engineering](./production/34-performance-engineering.md)
-- [Reproducibility and Regression Testing](./production/35-reproducibility-regression.md)
-- [Simulation-to-Real Transfer](./production/36-sim-to-real-transfer.md)
-- [Version Migration and Upgrades](./production/37-version-migration.md)
+- [Performance Engineering](./production/33-performance-engineering.md)
+- [Reproducibility and Regression](./production/34-reproducibility-regression.md)
+- [Simulation-to-Real](./production/35-sim-to-real.md)
+- [Version Migration](./production/36-version-migration.md)
 
 ---
 
 # Appendices
 
-- [System Contracts Reference](./appendices/a-system-contracts.md)
+- [Minimal USD Reference](./appendices/a-usd-reference.md)
 - [Failure Mode Index](./appendices/b-failure-mode-index.md)
 - [Performance Budgets](./appendices/c-performance-budgets.md)
-- [Version Compatibility Matrix](./appendices/d-version-compatibility.md)
-- [Fast Paths](./appendices/e-fast-paths.md)
+- [Version Compatibility](./appendices/d-version-compatibility.md)
+- [Fast Reading Paths](./appendices/e-fast-paths.md)
